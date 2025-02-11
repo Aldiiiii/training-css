@@ -8,29 +8,33 @@
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/font/bootstrap-icons.min.css">
     <style>
-        .container {
-            padding: 0;
-            margin: 0;
+        .container {           
             width: 100vw;
             display: grid;
-            grid-template-columns: 5vw 90vw 5vw;
+            justify-content: center;
+            background-color: wheat;
+            grid-template-columns: 25vw 25vw 25vw 25vw;
             grid-template-rows: 30vh 20vh;
             grid-template-areas: 
-                ". header ."
-                ". navbar ."
-                ". content ."
-                ". footer .";
+                "header header header header"
+               ;
         }
         header {
             background-color: aqua;
-            grid-area: header;      
+            border: 1px solid black;
+            grid-area: header;
         }
-
         .contact {
             background-color: #242B37;
-            height: 10vh;
+            color: white;
+            height: 5vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
         }
-
+        .contact-detail p {
+            display: inline;
+        }
         .title {
             background-color: aqua;
         }
@@ -41,11 +45,30 @@
 <body class="container">
     <header>
         <div class="contact">
+            <div class="contact-detail">
+                <img src="./assets/logokotabogor.gif" height="25px" width="auto" alt="">
+                <p><i class="bi bi-bank"></i> Bagian Hukum Setda. Kota Bogor</p>
+                <p><i class="bi bi-envelope"></i> jdih.kotabogor@gmail.com</p>
+                <p><i class="bi bi-telephone"></i> (0251) 8321075 || +62 813-8199-5371</p>
+            </div>
+            <div class="option-login">
+                2
+            </div>
         </div>
-        <div class="title">
+        <div class="logo">
+            <div class="logo1">
+                1
+            </div>
+            <div class="logo1">
+                2
+            </div>
+            <div class="title">
+                <h1>JDIH Kota Bogor</h1>
+                <h3>Jaringan Dokumentasi dan Informasi Hukum Kota Bogor</h3>
+            </div>
         </div>
     </header>
-    <navbar class="navbar"></navbar>
+    <navbar class="navbar">Navbar</navbar>
     <section class="form-pencarian">
 
     </section>
